@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkingService {
     
-    public func makeRequest(to endpoint: Endpoint, completion: @escaping (Result<Any,Error>)-> Void) {
+    public func makeRequest<Type: Decodable>(to endpoint: Endpoint, completion: @escaping (Result<Type,Error>)-> Void) {
         
         guard let url = URL(string: endpoint.rawValue) else { return }
         
@@ -21,9 +21,15 @@ class NetworkingService {
                 print("unwrapped error: \(unwrappedError)")
             } else if let unwrappedData = data {
                 do {
-                    guard let json = try? JSONDecoder().decode([JPUser].self, from: unwrappedData) else { return () }
-                    completion(.success(unwrappedData))
-                    print("Users json:\(json)")
+                    guard let decodedObject = try? JSONDecoder().decode(Type.self, from: unwrappedData) else { return }
+                    DispatchQueue.main.async {
+                        completion(.success(decodedObject))
+                    }
+                    
+                    
+//                    guard let json = try? JSONDecoder().decode([JPUser].self, from: unwrappedData) else { return () }
+//                    completion(.success(unwrappedData))
+//                    print("Users json:\(json)")
                 } catch let jsonError {
                     completion(.failure(jsonError))
                 }
