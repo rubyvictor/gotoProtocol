@@ -13,6 +13,11 @@
 		B1137E762281423200C0168E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1137E752281423200C0168E /* Assets.xcassets */; };
 		B1137E792281423200C0168E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1137E772281423200C0168E /* LaunchScreen.storyboard */; };
 		B1137E842281423200C0168E /* GoingProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E832281423200C0168E /* GoingProtoTests.swift */; };
+		B1137E8F2281425D00C0168E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E8E2281425D00C0168E /* DetailsViewController.swift */; };
+		B1137E912281447500C0168E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E902281447500C0168E /* UsersTableViewController.swift */; };
+		B1137E932281448B00C0168E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E922281448B00C0168E /* User.swift */; };
+		B1137E95228144FC00C0168E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E94228144FC00C0168E /* UserCell.swift */; };
+		B1137E9722814B3D00C0168E /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9622814B3D00C0168E /* NetworkingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		B1137E7F2281423200C0168E /* GoingProtoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoingProtoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1137E832281423200C0168E /* GoingProtoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoingProtoTests.swift; sourceTree = "<group>"; };
 		B1137E852281423200C0168E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1137E8E2281425D00C0168E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B1137E902281447500C0168E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
+		B1137E922281448B00C0168E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B1137E94228144FC00C0168E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		B1137E9622814B3D00C0168E /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,11 @@
 				B1137E752281423200C0168E /* Assets.xcassets */,
 				B1137E772281423200C0168E /* LaunchScreen.storyboard */,
 				B1137E7A2281423200C0168E /* Info.plist */,
+				B1137E8E2281425D00C0168E /* DetailsViewController.swift */,
+				B1137E902281447500C0168E /* UsersTableViewController.swift */,
+				B1137E922281448B00C0168E /* User.swift */,
+				B1137E94228144FC00C0168E /* UserCell.swift */,
+				B1137E9622814B3D00C0168E /* NetworkingService.swift */,
 			);
 			path = GoingProto;
 			sourceTree = "<group>";
@@ -198,6 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1137E712281423100C0168E /* ViewController.swift in Sources */,
+				B1137E8F2281425D00C0168E /* DetailsViewController.swift in Sources */,
+				B1137E95228144FC00C0168E /* UserCell.swift in Sources */,
+				B1137E932281448B00C0168E /* User.swift in Sources */,
+				B1137E912281447500C0168E /* UsersTableViewController.swift in Sources */,
+				B1137E9722814B3D00C0168E /* NetworkingService.swift in Sources */,
 				B1137E6F2281423100C0168E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
