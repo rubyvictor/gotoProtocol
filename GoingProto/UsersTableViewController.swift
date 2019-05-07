@@ -10,7 +10,7 @@ import UIKit
 
 class UsersTableViewController: UITableViewController {
     
-    var users = [User]()
+    var users = [UserProtocol]()
     let networkCall = NetworkingService()
     
     override func viewDidLoad() {

@@ -13,7 +13,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var factLabel: UILabel!
     
-    var user: User?
+    var user: UserProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,7 @@ class DetailsViewController: UIViewController {
 
     func loadUser() {
         self.nameLabel.text = user?.name
+        self.factLabel.text = user?.randomFact
     }
 
 }

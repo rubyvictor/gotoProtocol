@@ -8,6 +8,12 @@
 
 import Foundation
 
-struct User: Decodable {
-    let name: String    
+struct User: Decodable, UserProtocol {
+    
+    let name: String
+    
+    var randomFact: String {
+        return "I'm a random person called \(name)"
+    }
+    
 }

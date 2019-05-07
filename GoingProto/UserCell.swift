@@ -20,7 +20,7 @@ class UserCell: UITableViewCell {
 //        }
 //    }
     
-    func populate(with user: User) {
+    func populate(with user: UserProtocol) {
         nameLabel.text = user.name
     }
 }
