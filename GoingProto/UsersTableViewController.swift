@@ -20,7 +20,7 @@ class UsersTableViewController: UITableViewController {
     }
     
     private func getUsers() {
-        networkCall.makeRequest(to: .jsonPlaceholder) { (result: Result<[JPUser], Error>) in
+        networkCall.makeRequest(to: .dummyRestApi) { (result: Result<[DummyUser], Error>) in
             switch result {
             case .success(let users):
                 self.users = users
@@ -64,7 +64,7 @@ class UsersTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsVC = segue.destination as? DetailsViewController,
             
-            let user = sender as? JPUser
+            let user = sender as? DummyUser
             else { return }
         
         detailsVC.user = user
