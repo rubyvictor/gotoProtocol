@@ -21,6 +21,10 @@
 		B1137E9922816AB700C0168E /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9822816AB700C0168E /* UserProtocol.swift */; };
 		B1137E9B228172BC00C0168E /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9A228172BC00C0168E /* RandomUser.swift */; };
 		B1137E9D228176B000C0168E /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9C228176B000C0168E /* DummyUser.swift */; };
+		B1137E9F228199FE00C0168E /* HasUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9E228199FE00C0168E /* HasUser.swift */; };
+		B1137EA122819A8400C0168E /* JPApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137EA022819A8400C0168E /* JPApiResponse.swift */; };
+		B1137EA322819B3600C0168E /* DummyApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137EA222819B3600C0168E /* DummyApiResponse.swift */; };
+		B1137EA522819B7900C0168E /* RandomApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137EA422819B7900C0168E /* RandomApiResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		B1137E9822816AB700C0168E /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		B1137E9A228172BC00C0168E /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
 		B1137E9C228176B000C0168E /* DummyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
+		B1137E9E228199FE00C0168E /* HasUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasUser.swift; sourceTree = "<group>"; };
+		B1137EA022819A8400C0168E /* JPApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPApiResponse.swift; sourceTree = "<group>"; };
+		B1137EA222819B3600C0168E /* DummyApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyApiResponse.swift; sourceTree = "<group>"; };
+		B1137EA422819B7900C0168E /* RandomApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomApiResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,10 @@
 				B1137E922281448B00C0168E /* JPUser.swift */,
 				B1137E9A228172BC00C0168E /* RandomUser.swift */,
 				B1137E9C228176B000C0168E /* DummyUser.swift */,
+				B1137E9E228199FE00C0168E /* HasUser.swift */,
+				B1137EA022819A8400C0168E /* JPApiResponse.swift */,
+				B1137EA222819B3600C0168E /* DummyApiResponse.swift */,
+				B1137EA422819B7900C0168E /* RandomApiResponse.swift */,
 			);
 			path = GoingProto;
 			sourceTree = "<group>";
@@ -224,12 +236,16 @@
 				B1137E712281423100C0168E /* ViewController.swift in Sources */,
 				B1137E8F2281425D00C0168E /* DetailsViewController.swift in Sources */,
 				B1137E95228144FC00C0168E /* UserCell.swift in Sources */,
+				B1137E9F228199FE00C0168E /* HasUser.swift in Sources */,
 				B1137E9D228176B000C0168E /* DummyUser.swift in Sources */,
 				B1137E932281448B00C0168E /* JPUser.swift in Sources */,
 				B1137E912281447500C0168E /* UsersTableViewController.swift in Sources */,
 				B1137E9B228172BC00C0168E /* RandomUser.swift in Sources */,
+				B1137EA322819B3600C0168E /* DummyApiResponse.swift in Sources */,
 				B1137E9722814B3D00C0168E /* NetworkingService.swift in Sources */,
+				B1137EA122819A8400C0168E /* JPApiResponse.swift in Sources */,
 				B1137E9922816AB700C0168E /* UserProtocol.swift in Sources */,
+				B1137EA522819B7900C0168E /* RandomApiResponse.swift in Sources */,
 				B1137E6F2281423100C0168E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

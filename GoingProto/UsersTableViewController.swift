@@ -20,12 +20,22 @@ class UsersTableViewController: UITableViewController {
     }
     
     private func getUsers() {
-        networkCall.makeRequest(to: .dummyRestApi) { (result: Result<[DummyUser], Error>) in
+        networkCall.getUsers(from: .randomUser) { (result: Result<RandomApiResponse, Error>) in
             switch result {
-            case .success(let users):
-                self.users = users
+            case .success(let response):
+                self.users = response.users
                 self.tableView.reloadData()
-                
+            case .failure(let error):
+                print("Error fetching users:\(error)")
+            }
+        }
+        
+//        networkCall.makeRequest(to: .dummyRestApi) { (result: Result<[DummyUser], Error>) in
+//            switch result {
+//            case .success(let users):
+//                self.users = users
+//                self.tableView.reloadData()
+//
 //                do {
 //                    guard let unwrappedData = data as? Data else { return }
 //                    let users = try? JSONDecoder().decode([JPUser].self, from: unwrappedData)
@@ -36,10 +46,10 @@ class UsersTableViewController: UITableViewController {
 //                DispatchQueue.main.async {
 //                    self.tableView.reloadData()
 //                }
-            case .failure(let error):
-                print("Error fetching user:\(error)")
-            }
-        }
+//            case .failure(let error):
+//                print("Error fetching user:\(error)")
+//            }
+//        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,7 +74,7 @@ class UsersTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsVC = segue.destination as? DetailsViewController,
             
-            let user = sender as? DummyUser
+            let user = (sender as AnyObject) as? UserProtocol
             else { return }
         
         detailsVC.user = user

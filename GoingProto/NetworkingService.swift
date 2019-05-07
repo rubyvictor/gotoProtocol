@@ -25,17 +25,17 @@ class NetworkingService {
                     DispatchQueue.main.async {
                         completion(.success(decodedObject))
                     }
-                    
-                    
-//                    guard let json = try? JSONDecoder().decode([JPUser].self, from: unwrappedData) else { return () }
-//                    completion(.success(unwrappedData))
-//                    print("Users json:\(json)")
                 } catch let jsonError {
                     completion(.failure(jsonError))
                 }
             }
         }.resume()
     }
+    
+    public func getUsers<T: HasUsers>(from endpoint: Endpoint, completion: @escaping (Result<T, Error>)->Void) {
+        makeRequest(to: endpoint, completion: completion)
+    }
+    
     
     enum Endpoint: String {
         case jsonPlaceholder = "https://jsonplaceholder.typicode.com/users"
