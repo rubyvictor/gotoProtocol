@@ -36,6 +36,8 @@ class NetworkingService {
     
     enum Endpoint: String {
         case jsonPlaceholder = "https://jsonplaceholder.typicode.com/users"
+        case randomUser = "https://randomuser.me/api/?page=1&results=10&seed=abc"
+        case dummyRestApi = "http://dummyrestapiexample.com/api/v1/employees"
     }
     
     
