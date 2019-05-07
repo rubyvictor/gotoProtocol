@@ -10,28 +10,25 @@ import Foundation
 
 class NetworkingService {
     
-    public func makeRequest(to endpoint: Endpoint, completion: @escaping (Result<[User],Error>)-> Void) {
+    public func makeRequest(to endpoint: Endpoint, completion: @escaping (Result<[JPUser],Error>)-> Void) {
         
         guard let url = URL(string: endpoint.rawValue) else { return }
         
-        let dataTask = URLSession.shared.dataTask(with: url) { (data, res, err) in
+        URLSession.shared.dataTask(with: url) { (data, res, err) in
             
             if let unwrappedError = err {
                 completion(.failure(unwrappedError))
                 print("unwrapped error: \(unwrappedError)")
             } else if let unwrappedData = data {
                 do {
-                    guard let json = try? JSONDecoder().decode([User].self, from: unwrappedData) else { return () }
+                    guard let json = try? JSONDecoder().decode([JPUser].self, from: unwrappedData) else { return () }
                     completion(.success(json))
                     print("Users json:\(json)")
                 } catch let jsonError {
                     completion(.failure(jsonError))
                 }
             }
-        }
-        
-        dataTask.resume()
-        
+        }.resume()
     }
     
     enum Endpoint: String {

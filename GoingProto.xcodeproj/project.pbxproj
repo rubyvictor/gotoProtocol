@@ -15,7 +15,7 @@
 		B1137E842281423200C0168E /* GoingProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E832281423200C0168E /* GoingProtoTests.swift */; };
 		B1137E8F2281425D00C0168E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E8E2281425D00C0168E /* DetailsViewController.swift */; };
 		B1137E912281447500C0168E /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E902281447500C0168E /* UsersTableViewController.swift */; };
-		B1137E932281448B00C0168E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E922281448B00C0168E /* User.swift */; };
+		B1137E932281448B00C0168E /* JPUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E922281448B00C0168E /* JPUser.swift */; };
 		B1137E95228144FC00C0168E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E94228144FC00C0168E /* UserCell.swift */; };
 		B1137E9722814B3D00C0168E /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9622814B3D00C0168E /* NetworkingService.swift */; };
 		B1137E9922816AB700C0168E /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9822816AB700C0168E /* UserProtocol.swift */; };
@@ -44,7 +44,7 @@
 		B1137E852281423200C0168E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1137E8E2281425D00C0168E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B1137E902281447500C0168E /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
-		B1137E922281448B00C0168E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B1137E922281448B00C0168E /* JPUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPUser.swift; sourceTree = "<group>"; };
 		B1137E94228144FC00C0168E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		B1137E9622814B3D00C0168E /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		B1137E9822816AB700C0168E /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				B1137E7A2281423200C0168E /* Info.plist */,
 				B1137E8E2281425D00C0168E /* DetailsViewController.swift */,
 				B1137E902281447500C0168E /* UsersTableViewController.swift */,
-				B1137E922281448B00C0168E /* User.swift */,
+				B1137E922281448B00C0168E /* JPUser.swift */,
 				B1137E94228144FC00C0168E /* UserCell.swift */,
 				B1137E9622814B3D00C0168E /* NetworkingService.swift */,
 				B1137E9822816AB700C0168E /* UserProtocol.swift */,
@@ -218,7 +218,7 @@
 				B1137E712281423100C0168E /* ViewController.swift in Sources */,
 				B1137E8F2281425D00C0168E /* DetailsViewController.swift in Sources */,
 				B1137E95228144FC00C0168E /* UserCell.swift in Sources */,
-				B1137E932281448B00C0168E /* User.swift in Sources */,
+				B1137E932281448B00C0168E /* JPUser.swift in Sources */,
 				B1137E912281447500C0168E /* UsersTableViewController.swift in Sources */,
 				B1137E9722814B3D00C0168E /* NetworkingService.swift in Sources */,
 				B1137E9922816AB700C0168E /* UserProtocol.swift in Sources */,

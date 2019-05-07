@@ -56,7 +56,7 @@ class UsersTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailsVC = segue.destination as? DetailsViewController,
             
-            let user = sender as? User
+            let user = sender as? JPUser
             else { return }
         
         detailsVC.user = user
