@@ -22,8 +22,14 @@ class UsersTableViewController: UITableViewController {
     private func getUsers() {
         networkCall.makeRequest(to: .jsonPlaceholder) { (result) in
             switch result {
-            case .success(let users):
-                self.users = users
+            case .success(let data):
+                do {
+                    guard let unwrappedData = data as? Data else { return }
+                    let users = try? JSONDecoder().decode([JPUser].self, from: unwrappedData)
+                    self.users = users as! [UserProtocol]
+                } catch let requestError {
+                    assertionFailure("requestError\(requestError)")
+                }
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -42,7 +48,6 @@ class UsersTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserCell else { return UITableViewCell() }
         
         let user = users[indexPath.row]
-//        cell.nameLabel.text = user.name
         
         cell.populate(with: user)
         return cell

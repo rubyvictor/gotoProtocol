@@ -10,7 +10,7 @@ import Foundation
 
 class NetworkingService {
     
-    public func makeRequest(to endpoint: Endpoint, completion: @escaping (Result<[JPUser],Error>)-> Void) {
+    public func makeRequest(to endpoint: Endpoint, completion: @escaping (Result<Any,Error>)-> Void) {
         
         guard let url = URL(string: endpoint.rawValue) else { return }
         
@@ -22,7 +22,7 @@ class NetworkingService {
             } else if let unwrappedData = data {
                 do {
                     guard let json = try? JSONDecoder().decode([JPUser].self, from: unwrappedData) else { return () }
-                    completion(.success(json))
+                    completion(.success(unwrappedData))
                     print("Users json:\(json)")
                 } catch let jsonError {
                     completion(.failure(jsonError))

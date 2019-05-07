@@ -20,6 +20,7 @@
 		B1137E9722814B3D00C0168E /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9622814B3D00C0168E /* NetworkingService.swift */; };
 		B1137E9922816AB700C0168E /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9822816AB700C0168E /* UserProtocol.swift */; };
 		B1137E9B228172BC00C0168E /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9A228172BC00C0168E /* RandomUser.swift */; };
+		B1137E9D228176B000C0168E /* DummyUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1137E9C228176B000C0168E /* DummyUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B1137E9622814B3D00C0168E /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		B1137E9822816AB700C0168E /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		B1137E9A228172BC00C0168E /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		B1137E9C228176B000C0168E /* DummyUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,12 @@
 				B1137E7A2281423200C0168E /* Info.plist */,
 				B1137E8E2281425D00C0168E /* DetailsViewController.swift */,
 				B1137E902281447500C0168E /* UsersTableViewController.swift */,
-				B1137E922281448B00C0168E /* JPUser.swift */,
 				B1137E94228144FC00C0168E /* UserCell.swift */,
 				B1137E9622814B3D00C0168E /* NetworkingService.swift */,
 				B1137E9822816AB700C0168E /* UserProtocol.swift */,
+				B1137E922281448B00C0168E /* JPUser.swift */,
 				B1137E9A228172BC00C0168E /* RandomUser.swift */,
+				B1137E9C228176B000C0168E /* DummyUser.swift */,
 			);
 			path = GoingProto;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				B1137E712281423100C0168E /* ViewController.swift in Sources */,
 				B1137E8F2281425D00C0168E /* DetailsViewController.swift in Sources */,
 				B1137E95228144FC00C0168E /* UserCell.swift in Sources */,
+				B1137E9D228176B000C0168E /* DummyUser.swift in Sources */,
 				B1137E932281448B00C0168E /* JPUser.swift in Sources */,
 				B1137E912281447500C0168E /* UsersTableViewController.swift in Sources */,
 				B1137E9B228172BC00C0168E /* RandomUser.swift in Sources */,
